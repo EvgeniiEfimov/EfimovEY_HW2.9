@@ -26,7 +26,6 @@ class AnimationsViewController: UIViewController {
     @IBAction func nextButtonAction() {
         indexInstance += 1
         paramAnimateView(indexArrayInstance: lastIndexInstance)
-        paramAnimateLabelText(indexArrayInstance: lastIndexInstance)
         paramAnimatebuttonSpringOutlet(indexArrayInstance: indexInstance)
         animation()
         
@@ -46,15 +45,6 @@ class AnimationsViewController: UIViewController {
         viewOutlet.duration = instance[indexArrayInstance].duration
         viewOutlet.delay = instance[indexArrayInstance].delay
         viewOutlet.animate()
-    }
-    
-    private func paramAnimateLabelText (indexArrayInstance: Int) {
-        labelTextOutlet.animation = "\(instance[indexArrayInstance].preset)"
-        labelTextOutlet.curve = "\(instance[indexArrayInstance].curve)"
-        labelTextOutlet.force = instance[indexArrayInstance].force
-        labelTextOutlet.duration = instance[indexArrayInstance].duration
-        labelTextOutlet.delay = instance[indexArrayInstance].delay
-        labelTextOutlet.animate()
     }
     
     private func paramAnimatebuttonSpringOutlet (indexArrayInstance: Int) {
