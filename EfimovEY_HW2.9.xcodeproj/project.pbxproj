@@ -3,23 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BF0E274E9C2D981CA2EDB16 /* Pods_EfimovEY_HW2_9.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26DA2C0FB765635984413EF5 /* Pods_EfimovEY_HW2_9.framework */; };
+		CE260D2726BA2A460040219F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE260D2626BA2A460040219F /* Model.swift */; };
+		CE3FB30426BB068500CCD666 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3FB30326BB068500CCD666 /* DataManager.swift */; };
 		CE99D1B926B9776D0007CDB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99D1B826B9776D0007CDB0 /* AppDelegate.swift */; };
 		CE99D1BB26B9776D0007CDB0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99D1BA26B9776D0007CDB0 /* SceneDelegate.swift */; };
-		CE99D1BD26B9776D0007CDB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99D1BC26B9776D0007CDB0 /* ViewController.swift */; };
+		CE99D1BD26B9776D0007CDB0 /* AnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE99D1BC26B9776D0007CDB0 /* AnimationsViewController.swift */; };
 		CE99D1C026B9776D0007CDB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE99D1BE26B9776D0007CDB0 /* Main.storyboard */; };
 		CE99D1C226B9776E0007CDB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE99D1C126B9776E0007CDB0 /* Assets.xcassets */; };
 		CE99D1C526B9776E0007CDB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE99D1C326B9776E0007CDB0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26DA2C0FB765635984413EF5 /* Pods_EfimovEY_HW2_9.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EfimovEY_HW2_9.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		944667BF2092746D0BEFB932 /* Pods-EfimovEY_HW2.9.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EfimovEY_HW2.9.debug.xcconfig"; path = "Target Support Files/Pods-EfimovEY_HW2.9/Pods-EfimovEY_HW2.9.debug.xcconfig"; sourceTree = "<group>"; };
+		978978146C2A67F8DE69C033 /* Pods-EfimovEY_HW2.9.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EfimovEY_HW2.9.release.xcconfig"; path = "Target Support Files/Pods-EfimovEY_HW2.9/Pods-EfimovEY_HW2.9.release.xcconfig"; sourceTree = "<group>"; };
+		CE260D2626BA2A460040219F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		CE3FB30326BB068500CCD666 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		CE99D1B526B9776D0007CDB0 /* EfimovEY_HW2.9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EfimovEY_HW2.9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE99D1B826B9776D0007CDB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE99D1BA26B9776D0007CDB0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE99D1BC26B9776D0007CDB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE99D1BC26B9776D0007CDB0 /* AnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsViewController.swift; sourceTree = "<group>"; };
 		CE99D1BF26B9776D0007CDB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE99D1C126B9776E0007CDB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE99D1C426B9776E0007CDB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,17 +39,81 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BF0E274E9C2D981CA2EDB16 /* Pods_EfimovEY_HW2_9.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5FB00DB37CF35F8FC310998B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26DA2C0FB765635984413EF5 /* Pods_EfimovEY_HW2_9.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B019B8DDCAF0112C6327F177 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				944667BF2092746D0BEFB932 /* Pods-EfimovEY_HW2.9.debug.xcconfig */,
+				978978146C2A67F8DE69C033 /* Pods-EfimovEY_HW2.9.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE3FB30626BB2AE000CCD666 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CE99D1BE26B9776D0007CDB0 /* Main.storyboard */,
+				CE99D1C326B9776E0007CDB0 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CE3FB30826BB2B3100CCD666 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE260D2626BA2A460040219F /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE3FB30926BB2B6000CCD666 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CE99D1B826B9776D0007CDB0 /* AppDelegate.swift */,
+				CE99D1BA26B9776D0007CDB0 /* SceneDelegate.swift */,
+				CE3FB30326BB068500CCD666 /* DataManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CE3FB30A26BB2B8200CCD666 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE99D1BC26B9776D0007CDB0 /* AnimationsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CE3FB30B26BB2BA300CCD666 /* media */ = {
+			isa = PBXGroup;
+			children = (
+				CE99D1C126B9776E0007CDB0 /* Assets.xcassets */,
+				CE99D1C626B9776E0007CDB0 /* Info.plist */,
+			);
+			path = media;
+			sourceTree = "<group>";
+		};
 		CE99D1AC26B9776D0007CDB0 = {
 			isa = PBXGroup;
 			children = (
 				CE99D1B726B9776D0007CDB0 /* EfimovEY_HW2.9 */,
 				CE99D1B626B9776D0007CDB0 /* Products */,
+				B019B8DDCAF0112C6327F177 /* Pods */,
+				5FB00DB37CF35F8FC310998B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +128,11 @@
 		CE99D1B726B9776D0007CDB0 /* EfimovEY_HW2.9 */ = {
 			isa = PBXGroup;
 			children = (
-				CE99D1B826B9776D0007CDB0 /* AppDelegate.swift */,
-				CE99D1BA26B9776D0007CDB0 /* SceneDelegate.swift */,
-				CE99D1BC26B9776D0007CDB0 /* ViewController.swift */,
-				CE99D1BE26B9776D0007CDB0 /* Main.storyboard */,
-				CE99D1C126B9776E0007CDB0 /* Assets.xcassets */,
-				CE99D1C326B9776E0007CDB0 /* LaunchScreen.storyboard */,
-				CE99D1C626B9776E0007CDB0 /* Info.plist */,
+				CE3FB30926BB2B6000CCD666 /* Service */,
+				CE3FB30A26BB2B8200CCD666 /* ViewControllers */,
+				CE3FB30826BB2B3100CCD666 /* Models */,
+				CE3FB30626BB2AE000CCD666 /* Storyboards */,
+				CE3FB30B26BB2BA300CCD666 /* media */,
 			);
 			path = EfimovEY_HW2.9;
 			sourceTree = "<group>";
@@ -74,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE99D1C926B9776E0007CDB0 /* Build configuration list for PBXNativeTarget "EfimovEY_HW2.9" */;
 			buildPhases = (
+				160EAB3672317B9B31746D7E /* [CP] Check Pods Manifest.lock */,
 				CE99D1B126B9776D0007CDB0 /* Sources */,
 				CE99D1B226B9776D0007CDB0 /* Frameworks */,
 				CE99D1B326B9776D0007CDB0 /* Resources */,
+				9F4BCDF809FAF5770E234106 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,14 +204,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		160EAB3672317B9B31746D7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EfimovEY_HW2.9-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F4BCDF809FAF5770E234106 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EfimovEY_HW2.9/Pods-EfimovEY_HW2.9-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EfimovEY_HW2.9/Pods-EfimovEY_HW2.9-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EfimovEY_HW2.9/Pods-EfimovEY_HW2.9-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE99D1B126B9776D0007CDB0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE99D1BD26B9776D0007CDB0 /* ViewController.swift in Sources */,
+				CE99D1BD26B9776D0007CDB0 /* AnimationsViewController.swift in Sources */,
+				CE3FB30426BB068500CCD666 /* DataManager.swift in Sources */,
 				CE99D1B926B9776D0007CDB0 /* AppDelegate.swift in Sources */,
 				CE99D1BB26B9776D0007CDB0 /* SceneDelegate.swift in Sources */,
+				CE260D2726BA2A460040219F /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,11 +399,12 @@
 		};
 		CE99D1CA26B9776E0007CDB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 944667BF2092746D0BEFB932 /* Pods-EfimovEY_HW2.9.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = EfimovEY_HW2.9/Info.plist;
+				INFOPLIST_FILE = EfimovEY_HW2.9/media/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,11 +418,12 @@
 		};
 		CE99D1CB26B9776E0007CDB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 978978146C2A67F8DE69C033 /* Pods-EfimovEY_HW2.9.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = EfimovEY_HW2.9/Info.plist;
+				INFOPLIST_FILE = EfimovEY_HW2.9/media/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
